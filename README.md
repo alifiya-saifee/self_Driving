@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# 🚦 Arabic Traffic Sign Recognition (24-Class Classifier)
 
 ## Project info
 
