@@ -29,7 +29,7 @@ interface Location {
   lng: number;
 }
 
-const SERP_API_KEY = "c2242a49c3eda3248a47be63d8347d1ad9aa10ea0eef1d2326775c566ac0b6cd";
+const SERP_API_KEY = "API KEY";
 
 // Mock current location that moves along the route
 const simulateMovement = (steps: NavigationStep[], progress: number): Location => {
