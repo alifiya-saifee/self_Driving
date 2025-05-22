@@ -1,73 +1,42 @@
 # 🚦 Arabic Traffic Sign Recognition (24-Class Classifier)
 
-## Project info
+This project focuses on building an intelligent system for recognizing Arabic traffic signs using deep learning techniques. It is designed to classify 24 different types of traffic signs commonly found in the Middle East region, especially in Arabic-speaking countries. The system is capable of detecting signs in real-time video streams and labeling them with high accuracy.
 
-**URL**: https://lovable.dev/projects/a55b0e97-35ed-44ef-b5c9-1268451f1f3e
+The recognition system leverages a Convolutional Neural Network (CNN) trained on a custom dataset consisting of labeled Arabic traffic sign images. It also includes a robust filtering pipeline to reduce false positives caused by non-sign objects such as car headlights or other bright and irregular shapes.
 
-## How can I edit this code?
+## 🎯 Objectives
 
-There are several ways of editing your application.
+1.Build a classifier capable of recognizing 24 Arabic traffic sign classes.
+2. Train and validate a deep learning model using a structured image dataset.
+3. Implement a real-time detection system that can process video input.
+4. Reduce false positives using color, shape, and brightness filtering.
 
-**Use Lovable**
+## 📁 Dataset Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a55b0e97-35ed-44ef-b5c9-1268451f1f3e) and start prompting.
+The dataset used for this project includes:
+1. Thousands of labeled traffic sign images.
+2. An Excel file mapping each image to its respective class label.
+3. A wide range of sign categories with different shapes, colors, and orientations.
+4. The dataset was manually organized and augmented to ensure balanced representation across all 24 classes.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Model Highlights
 
-**Use your preferred IDE**
+1. Built using Keras with a CNN architecture optimized for multi-class classification.
+2. Trained with image normalization, augmentation, and early stopping for best results.
+3. Achieves reliable accuracy across both training and unseen test data.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Real-Time Detection System
+The detection module:
+1. Processes video frames using OpenCV.
+2. Applies HSV-based color filtering to highlight traffic signs.
+3. Uses shape and brightness constraints to eliminate irrelevant objects.
+4. Classifies signs using the trained model and displays labels and confidence scores on screen.
+This makes the system suitable for potential real-world integration into autonomous driving solutions or traffic monitoring tools.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+##  🚧 Future Improvements
+1. Expand dataset to include more sign classes and weather conditions.
+2. Optimize model for deployment on edge devices like Raspberry Pi.
+3. Integrate into larger driver assistance or navigation systems.
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a55b0e97-35ed-44ef-b5c9-1268451f1f3e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📌 Project Scope
+This project serves as a foundational step toward Arabic traffic sign recognition, contributing to localized AI development in transportation. It is ideal for students, researchers, or developers working in the fields of computer vision, intelligent transport systems, or smart city projects.
